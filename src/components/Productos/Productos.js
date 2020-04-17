@@ -13,12 +13,12 @@ class Productos extends Component{
         };
       }
     componentDidMount(){
-        Axios.get("http://localhost/ApiKubo/Productos/getAllProductos").then(response =>{
+        Axios.get("https://apikubo.herokuapp.com/Productos/getAllProductos").then(response =>{
             this.setState({
                 Listproductos:response.data
             })
         })
-        Axios.get("http://localhost/ApiKubo/Categorias/getAllCategorias").then(response =>{
+        Axios.get("https://apikubo.herokuapp.com/Categorias/getAllCategorias").then(response =>{
             this.setState({
                 ListCategorias:response.data
             })
@@ -30,7 +30,7 @@ class Productos extends Component{
        
        if(id_categoria!=0){
 
-           Axios.get('http://localhost/ApiKubo/Productos/getFilterProductos', {
+           Axios.get('https://apikubo.herokuapp.com/Productos/getFilterProductos', {
                params: {
                  id_categoria: id_categoria
                }
@@ -38,7 +38,7 @@ class Productos extends Component{
                this.setState({Listproductos:response.data})
              })
        }else{
-        Axios.get("http://localhost/ApiKubo/Productos/getAllProductos").then(response =>{
+        Axios.get("https://apikubo.herokuapp.com/Productos/getAllProductos").then(response =>{
             this.setState({
                 Listproductos:response.data
             })
@@ -56,7 +56,7 @@ class Productos extends Component{
         e.preventDefault();
         var dataform = new FormData();
         dataform.append('id_producto',id_producto);
-        Axios.post("http://localhost/ApiKubo/Carrito/addToCard",dataform).then(response=>{
+        Axios.post("https://apikubo.herokuapp.com/Carrito/addToCard",dataform).then(response=>{
             if(response.data.status){
                 alert("producto agregado al carrito");
 

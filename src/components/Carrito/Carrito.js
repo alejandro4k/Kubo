@@ -11,7 +11,7 @@ class Carrito extends Component {
     };
   }
   componentDidMount() {
-    Axios.get("http://localhost/ApiKubo/Carrito/getProductsFromCard").then(
+    Axios.get("https://apikubo.herokuapp.com/Carrito/getProductsFromCard").then(
       (response) => {
         this.setState({ productos: response.data });
         if (this.state.productos) {
@@ -57,10 +57,10 @@ class Carrito extends Component {
           var ventaData = new FormData();
           ventaData.append("total",this.state.totalPrice);
     
-          Axios.post("http://localhost/ApiKubo/Carrito/saveCompra",ventaData).then(res =>{
+          Axios.post("https://apikubo.herokuapp.com/Carrito/saveCompra",ventaData).then(res =>{
               if(res.data){
                   alert("compra exitosa.")
-                  Axios.get("http://localhost/ApiKubo/Carrito/getProductsFromCard").then(
+                  Axios.get("https://apikubo.herokuapp.com/Carrito/getProductsFromCard").then(
                     (response) => {
                       this.setState({ productos: response.data });
                       if (this.state.productos) {

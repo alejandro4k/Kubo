@@ -9,7 +9,7 @@ class Detalle extends Component {
     };
   }
   componentDidMount() {
-    Axios.get("http://localhost/ApiKubo/Productos/getInfoProducto", {
+    Axios.get("https://apikubo.herokuapp.com/Productos/getInfoProducto", {
       params: {
         id_producto: this.props.idProducto,
       },
@@ -25,7 +25,7 @@ class Detalle extends Component {
       alert(total);
       
       dataform.append("total",total)
-      Axios.post("http://localhost/ApiKubo/Carrito/saveCompra",dataform).then(res=>{
+      Axios.post("https://apikubo.herokuapp.com/Carrito/saveCompra",dataform).then(res=>{
           if(res.data){
               alert("compra exitosa");
           }else{
