@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Kubo/static/css/main.d63e5908.chunk.css",
+    "main.js": "/Kubo/static/js/main.e2b4dd3e.chunk.js",
+    "main.js.map": "/Kubo/static/js/main.e2b4dd3e.chunk.js.map",
+    "runtime-main.js": "/Kubo/static/js/runtime-main.4afda581.js",
+    "runtime-main.js.map": "/Kubo/static/js/runtime-main.4afda581.js.map",
+    "static/js/2.ed4145f4.chunk.js": "/Kubo/static/js/2.ed4145f4.chunk.js",
+    "static/js/2.ed4145f4.chunk.js.map": "/Kubo/static/js/2.ed4145f4.chunk.js.map",
+    "index.html": "/Kubo/index.html",
+    "precache-manifest.e1e5ac205c7ca80fae1e12de90cf88fe.js": "/Kubo/precache-manifest.e1e5ac205c7ca80fae1e12de90cf88fe.js",
+    "service-worker.js": "/Kubo/service-worker.js",
+    "static/css/main.d63e5908.chunk.css.map": "/Kubo/static/css/main.d63e5908.chunk.css.map",
+    "static/js/2.ed4145f4.chunk.js.LICENSE.txt": "/Kubo/static/js/2.ed4145f4.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/Kubo/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4afda581.js",
+    "static/js/2.ed4145f4.chunk.js",
+    "static/css/main.d63e5908.chunk.css",
+    "static/js/main.e2b4dd3e.chunk.js"
+  ]
+}
